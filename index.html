@@ -55,11 +55,28 @@
       display: inline-block;
       margin: 20px auto;
     }
-    footer {
-      margin-top: 60px;
+    .form-section {
+      margin: 40px auto;
+      max-width: 500px;
+      background-color: #1c1c1c;
       padding: 20px;
-      font-size: 14px;
-      color: #999;
+      border-radius: 10px;
+    }
+    .form-section input, .form-section textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+    }
+    .form-section button {
+      background-color: #1e90ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
     }
     img.preview {
       width: 90%;
@@ -68,6 +85,12 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 14px;
+      color: #999;
+    }
   </style>
 </head>
 <body>
@@ -75,8 +98,8 @@
     <h1>Blox Fruits PvP Guide</h1>
     <p>Master PvP, learn combos, and become a 30M bounty legend</p>
     <nav>
-      <a href="guide.html">📖 View Guide</a>
-      <a href="coaching.html">💬 Request Coaching</a>
+      <a href="#guide">📖 View Guide</a>
+      <a href="#coaching">💬 Request Coaching</a>
     </nav>
   </header>
 
@@ -88,10 +111,21 @@
   <a href="https://discord.gg/wE6rSqzdSY" class="discord-btn" target="_blank">Join the Discord Server</a>
 
   <h2 style="margin-top: 40px;">📸 Preview</h2>
-  <img class="preview" src="https://static.wikia.nocookie.net/blox-fruits/images/f/f4/InstinctV2.png" alt="Instinct Preview">
+  <img class="preview" src="https://static.wikia.nocookie.net/blox-fruits/images/1/15/PortalFruitAwakened.png" alt="Portal Fruit Preview">
+
+  <div id="coaching" class="form-section">
+    <h2>💬 Request Coaching</h2>
+    <form action="https://formspree.io/f/xqkrlryy" method="POST">
+      <input type="text" name="username" placeholder="Your Roblox Username" required />
+      <input type="text" name="bounty" placeholder="Your Bounty" required />
+      <textarea name="message" rows="4" placeholder="What do you want help with?" required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+  </div>
 
   <footer>
     <p>&copy; 2025 All rights reserved. This site is unofficial and fan-made for educational purposes.</p>
   </footer>
 </body>
 </html>
+
