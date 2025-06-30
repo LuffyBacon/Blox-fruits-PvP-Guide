@@ -12,84 +12,69 @@
       font-family: 'Orbitron', sans-serif;
       margin: 0;
       padding: 0;
+    }
+    header, section, footer {
       text-align: center;
+      padding: 20px;
     }
     header {
       background-color: #111;
-      padding: 30px 0;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     }
-    header h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    nav {
-      margin-top: 20px;
-    }
     nav a {
-      background: #1e90ff;
-      padding: 12px 24px;
-      margin: 10px;
-      border-radius: 8px;
-      color: white;
+      margin: 0 10px;
       text-decoration: none;
+      color: #1e90ff;
       font-weight: bold;
-      transition: 0.3s;
-      display: inline-block;
     }
-    nav a:hover {
-      background: #63b3ed;
-      transform: scale(1.05);
+    h1, h2, h3 {
+      color: #00bfff;
     }
-    .trailer {
-      margin: 40px auto;
-      max-width: 560px;
+    .trailer iframe, img.preview {
+      max-width: 90%;
+      margin-top: 20px;
+      border-radius: 10px;
     }
-    .discord-btn {
-      background: #5865F2;
-      padding: 12px 20px;
-      border-radius: 6px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
+    .guide-step {
+      background-color: #1a1a1a;
       margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: left;
+    }
+    .discord-btn, .form-section button {
+      background-color: #5865F2;
+      color: white;
+      padding: 12px 20px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      display: block;
+      text-align: center;
+      width: fit-content;
     }
     .form-section {
-      margin: 40px auto;
-      max-width: 500px;
-      background-color: #1c1c1c;
+      background: #1c1c1c;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      max-width: 600px;
+      margin: 30px auto;
     }
     .form-section input, .form-section textarea {
       width: 100%;
       padding: 10px;
       margin: 10px 0;
-      border-radius: 5px;
       border: none;
-    }
-    .form-section button {
-      background-color: #1e90ff;
-      color: white;
-      border: none;
-      padding: 10px 20px;
       border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-    img.preview {
-      width: 90%;
-      max-width: 600px;
-      margin-top: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
     }
     footer {
-      margin-top: 60px;
-      padding: 20px;
-      font-size: 14px;
-      color: #999;
+      font-size: 0.8rem;
+      color: #aaa;
     }
   </style>
 </head>
@@ -98,33 +83,58 @@
     <h1>Blox Fruits PvP Guide</h1>
     <p>Master PvP, learn combos, and become a 30M bounty legend</p>
     <nav>
-      <a href="#guide">📖 View Guide</a>
-      <a href="#coaching">💬 Request Coaching</a>
+      <a href="#guide">Guide</a>
+      <a href="#trailer">Trailer</a>
+      <a href="#coaching">Request Coaching</a>
     </nav>
   </header>
 
-  <div class="trailer">
-    <h2>🎬 Game Trailer</h2>
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/s0zbjAMoJJw" title="YouTube video" frameborder="0" allowfullscreen></iframe>
-  </div>
+  <section id="guide">
+    <h2>📖 Step-by-Step PvP Guide</h2>
 
-  <a href="https://discord.gg/wE6rSqzdSY" class="discord-btn" target="_blank">Join the Discord Server</a>
+    <div class="guide-step">
+      <h3>Step 1: Choose Your Build</h3>
+      <p>Your build is crucial in reaching 30M bounty. Try builds like Gravity Cane + Godhuman + Portal + Skull Guitar + Angel/Ghoul V4. Keep a balance between skill and utility.</p>
+    </div>
 
-  <h2 style="margin-top: 40px;">📸 Preview</h2>
-  <img class="preview" src="https://static.wikia.nocookie.net/blox-fruits/images/1/15/PortalFruitAwakened.png" alt="Portal Fruit Preview">
+    <div class="guide-step">
+      <h3>Step 2: Learn Combos</h3>
+      <p>Start with techs (mini combos) before jumping into one-shot combos. Try fruits like Ice, Dough, Kitsune or Portal if you're confident.</p>
+    </div>
 
-  <div id="coaching" class="form-section">
+    <div class="guide-step">
+      <h3>Step 3: Kentrick</h3>
+      <p>Master Ken tricking by keeping Instinct off, then enabling it only when you need to dodge. Memorize which skills bypass Instinct and which can be dodged with it.</p>
+    </div>
+
+    <div class="guide-step">
+      <h3>Step 4: Bounty Hunt</h3>
+      <p>Once ready, go hunt! Fight strong players and test your combos. You can request training below if you’d like to improve.</p>
+    </div>
+
+    <img class="preview" src="https://static.wikia.nocookie.net/blox-fruits/images/1/15/PortalFruitAwakened.png" alt="Portal Fruit Preview">
+  </section>
+
+  <section id="trailer">
+    <h2>🎬 Watch the Trailer</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s0zbjAMoJJw" title="YouTube trailer" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section id="coaching">
     <h2>💬 Request Coaching</h2>
-    <form action="https://formspree.io/f/xqkrlryy" method="POST">
-      <input type="text" name="username" placeholder="Your Roblox Username" required />
-      <input type="text" name="bounty" placeholder="Your Bounty" required />
-      <textarea name="message" rows="4" placeholder="What do you want help with?" required></textarea>
-      <button type="submit">Send Request</button>
-    </form>
-  </div>
+    <div class="form-section">
+      <form action="https://formspree.io/f/xqkrlryy" method="POST">
+        <input type="text" name="username" placeholder="Your Roblox Username" required />
+        <input type="text" name="bounty" placeholder="Your Bounty" required />
+        <textarea name="message" rows="4" placeholder="What do you want help with?" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+    <a href="https://discord.gg/wE6rSqzdSY" class="discord-btn" target="_blank">Join My Discord Server</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 All rights reserved. This site is unofficial and fan-made for educational purposes.</p>
+    <p>&copy; 2025 All rights reserved. This is a fan-made Blox Fruits guide. Not affiliated with Roblox or Blox Fruits developers.</p>
   </footer>
 </body>
 </html>
